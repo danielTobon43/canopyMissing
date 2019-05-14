@@ -25,7 +25,7 @@ C++ algorithm to estimate percent canopy missing of a stem tree using PCL 1.9.1 
 in the main folder:
 
     - cd build  
-    - cmake ../
+    - cmake ../src/
     - make
        
         	 
