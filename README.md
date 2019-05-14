@@ -1,5 +1,5 @@
 # canopyMissing
-C++ algorithm to estimate canopy missing of a stem tree using PCL
+C++ algorithm to estimate canopy missing of a stem tree using PCL 1.9.1 and OpenCV 4.1.0
 
 ## Input file structure support
 
@@ -17,7 +17,7 @@ C++ algorithm to estimate canopy missing of a stem tree using PCL
 
 -------------------
 ## Compilation
-* Set "YOUR OWN" PCL Build DIR in CMakeList.txt e.g: **/opt/pcl-1.8.1/build** and save it.
+* Set "YOUR OWN" PCL Build DIR in CMakeList.txt e.g: **/opt/pcl-1.9.1/build** and save it.
 * Set "YOUR OWN" OpenCV Build DIR in CMakeList.txt e.g: **/opt/opencv-4.1.0/build** and save it.
 * Create a "build" folder
 
