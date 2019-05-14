@@ -1,5 +1,5 @@
-# canopyMissing
-C++ algorithm to estimate canopy missing of a stem tree using PCL 1.9.1 and OpenCV 4.1.0
+# Percent canopy missing
+C++ algorithm to estimate percent canopy missing of a stem tree using PCL 1.9.1 and OpenCV 4.1.0
 
 ## Input file structure support
 
@@ -10,6 +10,7 @@ C++ algorithm to estimate canopy missing of a stem tree using PCL 1.9.1 and Open
 * percentage_canopy_missing %
 
 ## Example
+<img src="./example/reference.png" align="center" height="300" width="500"><br>
 <img src="./example/example0.png" align="center" height="300" width="500"><br>
 <img src="./example/example1.png" align="center" height="300" width="500"><br>
 <img src="./example/example2.png" align="center" height="400" width="500"><br>
