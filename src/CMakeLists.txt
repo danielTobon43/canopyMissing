@@ -20,8 +20,8 @@ set(CMAKE_CXX_COMPILER /usr/bin/g++)
 set(QT_QMAKE_EXECUTABLE "/usr/lib/x86_64-linux-gnu/qt5/bin/qmake")
 
 # set corresponding package directories
-set(PCL_DIR /opt/pcl-1.8.1/build)
-set(OpenCV_DIR /opt/opencv-3.4.1/build)
+set(PCL_DIR /opt/pcl-1.9.1/build)
+set(OpenCV_DIR /opt/opencv-4.1.0/build)
 #set(VTK_DIR 8 )
 
 #set the CMP0074 policy to old behavior (disable warnings) (CMake 3.12.0-rc1)
@@ -42,8 +42,8 @@ set(CMAKE_MODULE_PATH ${PCL_DIR}/../cmake/Modules)
 #set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/bin)
 
 # set turn off the output rule messages of cmake
-set_property(GLOBAL PROPERTY RULE_MESSAGES OFF)
-set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+#set_property(GLOBAL PROPERTY RULE_MESSAGES OFF)
+#set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 ##############################################################################
 # PACKAGES
@@ -78,7 +78,7 @@ else()
     message(FATAL_ERROR "    ERROR: VTK not found")
 endif()
 
-find_package(OpenCV 3.4.1 REQUIRED PATHS ${OPENCV_DIR})
+find_package(OpenCV 4.1.0 REQUIRED PATHS ${OPENCV_DIR})
 if(OpenCV_FOUND)
    message(STATUS "OpenCV status:")
    message(STATUS "    version: ${OpenCV_VERSION}")

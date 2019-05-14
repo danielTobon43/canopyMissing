@@ -225,7 +225,7 @@ void vtkVisualizer(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud,char ** argv
 
   cv::Mat gray;
 
-  cv::cvtColor(img_copy,gray,CV_BGR2GRAY);
+  cv::cvtColor(img_copy,gray,cv::COLOR_BGR2GRAY);
 /*
   cv::namedWindow("gray",CV_WINDOW_NORMAL);
   cv::resizeWindow("gray",640,480);
@@ -261,7 +261,7 @@ void vtkVisualizer(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud,char ** argv
  // cv::Canny(gray, gray, 100, 100*2,3);
   cv::Canny(gray, gray, 84, 255);
 
-  cv::namedWindow("gray",CV_WINDOW_NORMAL);
+  cv::namedWindow("gray",cv::WINDOW_NORMAL);
   cv::resizeWindow("gray",640,480);
   cv::moveWindow("gray",0,0);
   cv::imshow("gray",gray);
@@ -283,7 +283,7 @@ void vtkVisualizer(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud,char ** argv
 
         cv::Mat temp = img.clone();
 
-      cv::HoughCircles(gray, circles, CV_HOUGH_GRADIENT,dp,minDist, param1, param2, minRadius,maxRadius);
+      cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT,dp,minDist, param1, param2, minRadius,maxRadius);
       for(size_t i = 0; i < circles.size(); i++ ){
 
           cv::Point2d center(cvRound(circles[i][0]), cvRound(circles[i][1]));
@@ -309,7 +309,7 @@ void vtkVisualizer(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud,char ** argv
       // circle outline
       //cv::circle(img_copy, center_pattern1, r,cv::Scalar(255,0,0),5);
 
-      cv::namedWindow("circle",CV_WINDOW_NORMAL);
+      cv::namedWindow("circle",cv::WINDOW_NORMAL);
       cv::resizeWindow("circle",640,480);
       cv::moveWindow("circle",0,0);
       cv::imshow("circle",temp);
@@ -395,7 +395,7 @@ void vtkVisualizer(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud,char ** argv
 
   std::cout << "Percentage canopy missing:" << percentage << "%" << std::endl;
 
-  cv::namedWindow("fin",CV_WINDOW_NORMAL);
+  cv::namedWindow("fin",cv::WINDOW_NORMAL);
   cv::resizeWindow("fin",640,480);
   cv::moveWindow("fin",0,0);
   cv::imshow("fin",img_copy);
