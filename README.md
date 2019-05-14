@@ -4,9 +4,6 @@ C++ algorithm to estimate canopy missing of a stem tree using PCL 1.9.1 and Open
 ## Input file structure support
 
 * .pcd 
-* .ply
-* .txt
-* .xyz
 
 ## Output file structure .txt
 
