@@ -13,7 +13,10 @@ C++ algorithm to estimate canopy missing of a stem tree using PCL 1.9.1 and Open
 * percentage_canopy_missing %
 
 ## Example
-<img src="./example/scan1.png" align="center" height="400" width="720"><br>
+<img src="./example/examplo0.png" align="center" height="400" width="720"><br>
+<img src="./example/examplo1.png" align="center" height="400" width="720"><br>
+<img src="./example/examplo2.png" align="center" height="400" width="720"><br>
+<img src="./example/examplo3.png" align="center" height="400" width="720"><br>
 
 -------------------
 ## Compilation
